@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00000000">
+    <LinearLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:orientation="horizontal"
+    	android:baselineAligned="true" >
+        <RelativeLayout
+            android:id = "@+id/id_ScrollMapEdit"
+	        android:layout_width = "0dp"
+	        android:layout_height = "fill_parent"
+	        android:layout_weight = "3"
+	        android:background = "#00000000">
+	        <com.game.mapeditor.CMapEditorView
+	            android:id = "@+id/id_CMapEditorView"
+	        	android:layout_width = "wrap_content"
+	        	android:layout_height = "wrap_content"
+	        	android:background = "#008800"/>
+    	</RelativeLayout>
+    	<com.game.mapeditor.CScrollView_MapList
+    	    android:id = "@+id/id_ScrollListItem"
+	        android:layout_width = "0dp"
+	        android:layout_height = "fill_parent"
+	        android:layout_weight = "1"
+	        android:background = "#00000000">
+	        <com.game.mapeditor.CMapListItemView
+	            android:id = "@+id/id_CMapListItemView"
+	            android:layout_width = "fill_parent"
+	            android:layout_height = "wrap_content"
+	            android:background="#004400"/>
+    	</com.game.mapeditor.CScrollView_MapList>
+    </LinearLayout>
+</RelativeLayout>
